@@ -5,5 +5,107 @@ html {
 }
 
 body {
-    background-color: yellow;
+    background-color: #efefef;
+}
+
+.instrument {
+    background-color: purple;
+    width: 22rem;
+    height: 15rem;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    position: absolute;
+    top: calc(50% - 7.5rem);
+    left: calc(50% - 11rem);
+    box-shadow: 0.3rem 0.4rem 0.15rem 0.2rem rgba(0, 0, 0, 0.8);
+}
+
+span {
+    display: block;
+    color: white;
+    font-family: monospace;
+    margin: 1rem;
+}
+
+.keys {
+    width: 17.5rem;
+    height: 70%;
+    background-color: rgb(61, 0, 61);
+    margin: 1.3rem auto 0;
+    border: 0.1rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.1rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
+}
+
+.key {
+    height: 100%;
+    width: 2.5rem;
+    border: 0.1rem solid black;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.white {
+    background-color: white;
+    position: relative;
+}
+
+.black {
+    position: absolute;
+    top: -2.2rem;
+    left: 50%;
+    background-color: black;
+    transform: scale(0.6);
+    z-index: 1;
+}
+
+.hiddable, .hiddable-two, .hiddable-three {
+    display: none;
+}
+
+@media all and (min-width: 40rem) {
+    .instrument {
+        width: 38.5rem;
+        left: calc(50% - 19.25rem);
+    }
+
+    .keys {
+        width: 34rem;
+    }
+
+    .hiddable {
+        display: block;
+    }
+}
+
+@media all and (min-width: 60rem) {
+    .instrument {
+        width: 56rem;
+        left: calc(50% - 28rem);
+    }
+
+    .keys {
+        width: 51.5rem;
+    }
+
+    .hiddable-two {
+        display: block;
+    }
+}
+
+@media all and (min-width: 75rem) {
+    .instrument {
+        width: 73.5rem;
+        left: calc(50% - 36.75rem);
+    }
+
+    .keys {
+        width: 69rem;
+    }
+
+    .hiddable-three {
+        display: block;
+    }
 }
