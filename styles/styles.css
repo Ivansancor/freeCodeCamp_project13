@@ -33,10 +33,13 @@ span {
     background-color: rgb(61, 0, 61);
     margin: 1.3rem auto 0;
     border: 0.1rem solid black;
+    box-shadow: 0.1rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
+    /*The following can also be achieved with overflow:hidden here and a property of float-left to the following ".key" selector (width here would need tweaking).
+
+    This way, all hiddable classes wouldn't be necessary, not in HTML nor in the media queries*/
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0.1rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
 }
 
 .key {
@@ -89,7 +92,7 @@ span {
     .keys {
         width: 51.5rem;
     }
-
+     
     .hiddable-two {
         display: block;
     }
